@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.nauraki">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UPP" />
+        <activity android:name=".Uptet" />
+        <activity android:name=".Vilom_upp" />
+        <activity android:name=".Paribhasalist" />
+        <activity android:name=".ParibhasaDetail" />
+        <activity android:name=".Prayawachi" />
+        <activity android:name=".Tatsam" />
+        <activity android:name=".Anekarthi" />
+        <activity android:name=".Rachna" />
+        <activity android:name=".QuestonMath" />
+        <activity android:name=".GSQuestion" />
+        <activity android:name=".ReasoningQuestion" />
+        <activity android:name=".Sample_paper" />
+        <activity android:name=".Previous_year_paper" />
+        <activity android:name=".Lekhpal" />
+        <activity android:name=".SSC" />
+        <activity android:name=".BANK" />
+        <activity android:name=".Vyakansh_Bodhak" />
+        <activity android:name=".RachnaView" />
+        <activity android:name=".downloadPrev" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".ShowResult" />
+        <activity android:name=".NotificationActivity"></activity>
+    </application>
+
+</manifest>

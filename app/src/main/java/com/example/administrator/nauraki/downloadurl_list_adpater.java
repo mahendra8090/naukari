@@ -1,0 +1,117 @@
+package com.example.administrator.nauraki;
+
+import android.content.Context;
+import android.content.Intent;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+import static maes.tech.intentanim.CustomIntent.customType;
+
+public class downloadurl_list_adpater extends RecyclerView.Adapter<downloadurl_list_adpater.ViewHolder> {
+ArrayList<String> topic_st=new ArrayList<>();
+    Intent intent;
+Context mcontext;
+int mKey;
+
+    public downloadurl_list_adpater(Context c, int key) {
+
+
+        mcontext=c;
+        mKey=key;
+        GetArray g=new GetArray();
+        topic_st=g.getExamname_list();
+     /*  switch (key){
+           case 1:
+           {
+               topic_st=g.getMathlist();
+              intent =new Intent(mcontext,QuestonMath.class);
+               break;
+           }
+           case 2:
+           {
+               topic_st=g.getGslist();
+               intent =new Intent(mcontext,GSQuestion.class);
+               break;
+           }
+           case 3:
+           {
+               topic_st=g.getReasoninglist();
+               intent =new Intent(mcontext,ReasoningQuestion.class);
+               break;
+           }
+           case 4:
+           {
+               topic_st=g.getKavi_name();
+               intent =new Intent(mcontext,RachnaView.class);
+               break;
+
+           }
+           case 5:
+           {
+               topic_st=g.getParibhasa_list();
+               intent =new Intent(mcontext,ParibhasaDetail.class);
+               break;
+
+           }
+
+
+       }*/
+
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder{
+
+    public int currentItem;
+
+
+        TextView topic;
+
+        public ViewHolder(View itemView) {
+        super(itemView);
+
+       topic = (TextView) itemView.findViewById(R.id.downloadurl_name_id);
+
+
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mcontext, "present  "+getAdapterPosition(), Toast.LENGTH_SHORT).show();
+                Intent i=new Intent(mcontext,downloadPrev.class);
+
+                mcontext.startActivity(i);
+
+                customType(mcontext,"left-to-right");
+            }
+        });
+       }}
+
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, final int i) {
+        final int j =i;
+        View v = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.downloadurl_item, viewGroup, false);
+
+        ViewHolder viewHolder = new ViewHolder(v);
+
+                return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder viewHolder, int i) {
+        viewHolder.topic.setText(topic_st.get(i).toString());
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return topic_st.size();
+
+    }
+}

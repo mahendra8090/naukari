@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1031814096590",
+    "firebase_url": "https://naukari-9d391.firebaseio.com",
+    "project_id": "naukari-9d391",
+    "storage_bucket": "naukari-9d391.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031814096590:android:975ae3e0d4e0c761",
+        "android_client_info": {
+          "package_name": "com.example.administrator.nauraki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031814096590-1ujsoifh4j7jpudfs09djo6un09fjqsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.administrator.nauraki",
+            "certificate_hash": "0c333ee5d7660d71e77a890fe4c1627358408247"
+          }
+        },
+        {
+          "client_id": "1031814096590-7vb3jutg8cp91d7cie23ljffsn0vdo0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDujdcyFor0bNezK6WNfHv4OKD2FomU5hc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031814096590-7vb3jutg8cp91d7cie23ljffsn0vdo0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

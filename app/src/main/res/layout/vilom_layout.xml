@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/colorwhite"
+    android:layout_marginTop="1dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/serial_vilom"
+        android:textSize="19dp"
+        android:textColor="@color/colorblack"
+        android:layout_weight=".3"
+        android:text="क्रमांक"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="19dp"
+        android:textColor="@color/colorblack"
+        android:id="@+id/sabd_upp_vilom"
+
+        android:text="sabd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/vilom_upp_vilom"
+        android:layout_weight="1"
+        android:textSize="19dp"
+        android:textColor="@color/colorblack"
+        android:text="vilom"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+
+        />
+
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
